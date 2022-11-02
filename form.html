@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lucas Flash">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Desafío 2022</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+    <link href="./css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/pricing.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+
+
+<div class="container py-3">
+    <header>
+      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path>
+        </a>
+    
+      </div>
+    </header>
+
+
+<!-- Formulario -->
+<h3 class="mediumItalic text-center">Formulario Desafio 2022</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="shadow-lg border border-info p-3 mb-2 mt-4  bg-body rounded">
+                            <form id="form" class="needs-validation mediumItalic" novalidate>
+                              <div class="a3">
+                                <div class="col-md-12 mb-3">
+                                    <label for="user" class="c1">Usuario:</label>
+                                    <input id="user" name="user" type="text" autocomplete="off" 
+                                    class="form-control" placeholder="Ingrese su nombre y apellido" pattern="[A-Za-z\s]+"
+                                    required>
+                                    <div class="valid-feedback">
+                                        Campo Valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Completar con su usuario
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="email"  class="c1">Email:</label>
+                                    <input id="email" name="email" type="email" autocomplete="off" 
+                                    placeholder="Ingrese su email" class="form-control" required>
+                                    <div class="valid-feedback">
+                                        Campo valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Completar con su email (ejemplo@gmail.com o ejemplo@hotmail.com)
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/ar.png"
+                                        srcset="https://flagcdn.com/80x60/ar.png 2x,
+                                          https://flagcdn.com/120x90/ar.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Argentina">
+                                        1° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/sa.png"
+                                        srcset="https://flagcdn.com/80x60/sa.png 2x,
+                                          https://flagcdn.com/120x90/sa.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Arabia Saudita">
+                                    </label>
+                                    <select class="form-select" name="p1" id="p1" required>
+                                        <option selected disabled value="">1° PARTIDO</option>
+                                        <option>EMPATE</option>
+                                        <option>ARGENTINA</option>
+                                        <option>ARABIA SAUDI</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        1° PARTIDO
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/mx.png"
+                                        srcset="https://flagcdn.com/80x60/mx.png 2x,
+                                          https://flagcdn.com/120x90/mx.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="México">2° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/pl.png"
+                                        srcset="https://flagcdn.com/80x60/pl.png 2x,
+                                          https://flagcdn.com/120x90/pl.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Polonia">
+                                    </label>
+                                    <select class="form-select" name="p2" id="p2" required>
+                                        <option selected disabled value="">2° PARTIDO</option>
+                                        <option>EMPATE</option>
+                                        <option>MÉXICO</option>
+                                        <option>POLONIA</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        2° PARTIDO
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/sa.png"
+                                        srcset="https://flagcdn.com/80x60/sa.png 2x,
+                                          https://flagcdn.com/120x90/sa.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Arabia Saudita">3° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/pl.png"
+                                        srcset="https://flagcdn.com/80x60/pl.png 2x,
+                                          https://flagcdn.com/120x90/pl.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Polonia">
+                                    </label>
+                                    <select class="form-select" name="p3" id="p3" required>
+                                        <option selected disabled value="">3° PARTIDO</option>
+                                        <option>EMPATE</option>
+                                        <option>ARABIA SAUDI</option>
+                                        <option>POLONIA</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        3° PARTIDO
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/ar.png"
+                                        srcset="https://flagcdn.com/80x60/ar.png 2x,
+                                          https://flagcdn.com/120x90/ar.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Argentina">
+                                        4° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/mx.png"
+                                        srcset="https://flagcdn.com/80x60/mx.png 2x,
+                                          https://flagcdn.com/120x90/mx.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="México"></label>
+                                    <select class="form-select" name="p4" id="p4" required>
+                                        <option selected disabled value="">4° PARTIDO</option>
+                                        <option>EMPATE</option>
+                                        <option>ARGENTINA</option>
+                                        <option>MÉXICO</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        4° PARTIDO
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/ar.png"
+                                        srcset="https://flagcdn.com/80x60/ar.png 2x,
+                                          https://flagcdn.com/120x90/ar.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Argentina">
+                                        5° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/pl.png"
+                                        srcset="https://flagcdn.com/80x60/pl.png 2x,
+                                          https://flagcdn.com/120x90/pl.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Polonia"></label>
+                                    <select class="form-select" name="p5" id="p5" required>
+                                        <option selected disabled value="">5° PARTIDO
+                                        </option>
+                                        <option>EMPATE</option>
+                                        <option>ARGENTINA</option>
+                                        <option>POLONIA</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        5° PARTIDO
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1">
+                                        <img
+                                        src="https://flagcdn.com/40x30/sa.png"
+                                        srcset="https://flagcdn.com/80x60/sa.png 2x,
+                                          https://flagcdn.com/120x90/sa.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="Arabia Saudita">
+                                        6° PARTIDO
+                                        <img
+                                        src="https://flagcdn.com/40x30/mx.png"
+                                        srcset="https://flagcdn.com/80x60/mx.png 2x,
+                                          https://flagcdn.com/120x90/mx.png 3x"
+                                        width="40"
+                                        height="30"
+                                        alt="México"></label>
+                                    <select class="form-select" name="p6" id="p6" required>
+                                        <option selected disabled value="">6° PARTIDO</option>
+                                        <option>EMPATE</option>
+                                        <option>ARABIA SAUDI</option>
+                                        <option>MÉXICO</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        6° PARTIDO
+                                    </div>
+                                </div>                                                                
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04"  class="c1"><nav>Número de Goles de Argentina</nav></label>
+                                    <select class="form-select" name="gol" id="gol" required>
+                                        <option selected disabled value="">Número de Goles de Argentina</option>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Número de Goles de Argentina
+                                    </div>
+                                </div> 
+                              <div class="col-md-12 mb-3">
+                                <label for="validationCustom04"  class="c1">CONTRICANTE DE 8VOS</label>
+                                <select class="form-select" name="gd" id="gd" required>
+                                    <option selected disabled value="">CONTRICANTE DE 8VOS</option>
+                                    <option>NINGUNO</option>
+                                    <option>AUSTRALIA</option>
+                                    <option>DINAMARCA</option>
+                                    <option>FRANCIA</option>
+                                    <option>TÚNEZ</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    CONTRICANTE DE 8VOS
+                                </div>
+                            </div>                                 
+                                
+                                <div class="col-md-12 mb-3 mt-5">
+                                    <input id="enviar-solicitud" class="btn btn-primary mediumItalic me-3" type="submit" value="Enviar"/>
+                                    <input type="reset" name="resetear" class="btn btn-warning mediumItalic me-2" value="Borrar"/>
+                                    
+                                  </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+
+  <div class="redes">
+    Lucas Flash
+    </div>
+    <div class="redes">
+     2022
+      </div>
+    
+    
+    </div>
+
+    <script src="./js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                       </body>
+                       </html>

@@ -1,0 +1,107 @@
+
+[
+    {
+        "id": 1,
+        "user": "JuanPedro",
+        "p1": "b1.png",
+        "p2": "b3.png",
+        "p3": "b4.png",
+        "p4": "b1.png",
+        "p5": "b1.png",
+        "p6": "b3.png",
+        "gol": "6",
+        "gd": "FRA"
+    }, 
+    {
+        "id": 2,
+        "user": "Miguelito",
+        "p1": "b2.png",
+        "p2": "b4.png",
+        "p3": "b4.png",
+        "p4": "b1.png",
+        "p5": "b1.png",
+        "p6": "b2.png",
+        "gol": "8",
+        "gd": "DIN"
+    },
+    {
+        "id": 3,
+        "user": "Juano",
+        "p1": "b1.png",
+        "p2": "b4.png",
+        "p3": "b4.png",
+        "p4": "b1.png",
+        "p5": "b1.png",
+        "p6": "b4.png",
+        "gol": "6",
+        "gd": "DIN"
+    }, 
+    {
+        "id": 4,
+        "user": "Miguel",
+        "p1": "b2.png",
+        "p2": "b3.png",
+        "p3": "b4.png",
+        "p4": "b1.png",
+        "p5": "b1.png",
+        "p6": "b4.png",
+        "gol": "4",
+        "gd": "DIN"
+    }
+]
+
+
+var table = new Tabulator("#example-table", {
+    data:tabledata,           //load row data from array
+    layout:"fitColumns",      //fit columns to width of table
+    responsiveLayout:"hide",  //hide columns that dont fit on the table
+    addRowPos:"top",          //when adding a new row, add it to the top of the table
+    history:false,             //allow undo and redo actions on the table
+    pagination:"local",       //paginate the data
+    paginationSize:3,         //allow 7 rows per page of data
+    paginationCounter:"rows", //display count of paginated rows in footer
+    movableColumns:true,      //allow column order to be changed
+    initialSort:[             //set the initial sort order of the data
+        {column:"name", dir:"asc"},
+    ],
+    columnDefaults:{
+        tooltip:true,         //show tool tips on cells
+    },
+    columns:[                 //define the table columns
+        {title:"Name", field:"name", editor:"input"},
+        {title:"Task Progress", field:"progress", hozAlign:"left", formatter:"progress", editor:true},
+        {title:"Gender", field:"gender", width:95, editor:"select", editorParams:{values:["male", "female"]}},
+        {title:"Rating", field:"rating", formatter:"star", hozAlign:"center", width:100, editor:true},
+        {title:"Color", field:"col", width:130, editor:"input"},
+        {title:"Date Of Birth", field:"dob", width:130, sorter:"date", hozAlign:"center"},
+        {title:"Driver", field:"car", width:90,  hozAlign:"center", formatter:"tickCross", sorter:"boolean", editor:true},
+    ],
+});
+
+
+//Build Tabulator
+var table = new Tabulator("#example-table", {
+    height:"311px",
+    layout:"fitColumns",
+    reactiveData:true, //turn on data reactivity
+    data:Array11, //load data into table
+    columns:[
+        {title:"Id", field:"id", sorter:"number"},
+        {title:"Usuario", field:"name", sorter:"string", width:200},
+        {title:"ARG vs ASI", field:"p1", sorter:"string"},
+        {title:"MEX vs POL", field:"p2", sorter:"string"},
+        {title:"ASI vs POL", field:"p3", sorter:"string"},
+        {title:"ARG vs MEX", field:"p4", sorter:"string"},
+        {title:"ARG vs POL", field:"p5", sorter:"string"},
+        {title:"ASI vs MEX", field:"p6", sorter:"string"},
+        {title:"Goles", field:"gol", sorter:"number"},
+        {title:"Ovos", field:"gd", sorter:"string"},
+
+
+    ],
+});
+
+
+console.log("Porota")
+console.log(Array1x)
+console.log("Yegua")
